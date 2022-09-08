@@ -3,11 +3,11 @@
 
 <ul>
     <li>
-        <%= link_to "#{value.title}"%>
+        <%= link_to "#{value.title}", blog_posts_path(value)%>
     </li>
 
 </ul>
 
 <% end %>
-
+<%= link_to 'Create A Post', new_blog_post_path%>
 
