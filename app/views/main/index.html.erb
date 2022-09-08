@@ -1,3 +1,13 @@
 <h1>My Blog</h1>
 <% @blog_posts.map do |value| %>
-    
+
+<ul>
+    <li>
+        <%= link_to "#{value.title}"%>
+    </li>
+
+</ul>
+
+<% end %>
+
+

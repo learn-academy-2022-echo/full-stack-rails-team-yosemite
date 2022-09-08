@@ -5,6 +5,7 @@ rails generate model BlogPost title:string content:string
 rails db:migrate
 DONE
 * As a developer, I can add new blog posts directly to my database.
+DONE
 - make a controller
 rails generate controller Main
 -in main_controller :
@@ -16,7 +17,11 @@ rails generate controller Main
 exit command exits console
 BlogPost.create title:"My First Post", content:"Welcome to my first post on my blog! Thanks for reading."
 
+ BlogPost.create title:"My Second Post", content:"Hey, you came back!"
+DONE
+
 * As a user, I can see all the blog titles listed on the home page of the application.
+DONE
 
 * As a user, I can click on the title of a blog and be routed to a page where I see the title and content of the blog post I selected.
 
